@@ -10,16 +10,20 @@ import UIKit
 
 extension UIColor {
     static func fromHexString(_ rawHex: String, alpha: CGFloat = 1) -> UIColor? {
-        // FIXME: here!
-        guard let hex = UInt32(rawHex) else {
-            return nil
-        }
+        let scanner = Scanner(string: rawHex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted))
+        scanner.scanLocation = 0
         
-        let divisor = CGFloat(255)
-        let red     = CGFloat((hex & 0xFF0000) >> 16) / divisor
-        let green   = CGFloat((hex & 0x00FF00) >>  8) / divisor
-        let blue    = CGFloat( hex & 0x0000FF) / divisor
-        return UIColor(red: red, green: green, blue: blue, alpha: alpha)
+        var rgbValue: UInt64 = 0
+        scanner.scanHexInt64(&rgbValue)
+        
+        let r = (rgbValue & 0xff0000) >> 16
+        let g = (rgbValue & 0xff00) >> 8
+        let b = rgbValue & 0xff
+        
+        return UIColor(red: CGFloat(r) / 0xff,
+                green: CGFloat(g) / 0xff,
+                blue: CGFloat(b) / 0xff,
+                alpha: alpha)
     }
 }
 
