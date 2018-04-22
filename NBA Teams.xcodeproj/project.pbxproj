@@ -8,20 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		ACEAB60E20882657009B8148 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEAB60D20882657009B8148 /* AppDelegate.swift */; };
-		ACEAB61020882657009B8148 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEAB60F20882657009B8148 /* ViewController.swift */; };
+		ACEAB61020882657009B8148 /* MainFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEAB60F20882657009B8148 /* MainFeedViewController.swift */; };
 		ACEAB61320882657009B8148 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEAB61120882657009B8148 /* Main.storyboard */; };
 		ACEAB61520882657009B8148 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACEAB61420882657009B8148 /* Assets.xcassets */; };
 		ACEAB61820882657009B8148 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEAB61620882657009B8148 /* LaunchScreen.storyboard */; };
+		ACEAB62120882A14009B8148 /* StandingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEAB61F20882A14009B8148 /* StandingsTableViewCell.swift */; };
+		ACEAB62220882A14009B8148 /* StandingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACEAB62020882A14009B8148 /* StandingsTableViewCell.xib */; };
+		ACEAB62420882A84009B8148 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEAB62320882A84009B8148 /* FeedCell.swift */; };
+		ACEAB62A208B8B5A009B8148 /* Standings.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEAB629208B8B5A009B8148 /* Standings.swift */; };
+		ACEAB62C208B8DFA009B8148 /* AllTeams.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEAB62B208B8DFA009B8148 /* AllTeams.swift */; };
+		ACEAB62E208B9714009B8148 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEAB62D208B9714009B8148 /* Extensions.swift */; };
+		ACEAB631208B986B009B8148 /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEAB630208B986B009B8148 /* RestApiManager.swift */; };
+		ACEAB633208B997A009B8148 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEAB632208B997A009B8148 /* Routes.swift */; };
+		ACEAB639208C314D009B8148 /* StandingsBO.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEAB638208C314D009B8148 /* StandingsBO.swift */; };
+		ACEAB63B208C35D7009B8148 /* AllTeamsBO.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEAB63A208C35D7009B8148 /* AllTeamsBO.swift */; };
+		ACEAB63E208C3975009B8148 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEAB63D208C3975009B8148 /* CacheManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ACEAB60A20882657009B8148 /* NBA Teams.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NBA Teams.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACEAB60D20882657009B8148 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ACEAB60F20882657009B8148 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ACEAB60F20882657009B8148 /* MainFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFeedViewController.swift; sourceTree = "<group>"; };
 		ACEAB61220882657009B8148 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACEAB61420882657009B8148 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACEAB61720882657009B8148 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACEAB61920882657009B8148 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACEAB61F20882A14009B8148 /* StandingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsTableViewCell.swift; sourceTree = "<group>"; };
+		ACEAB62020882A14009B8148 /* StandingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StandingsTableViewCell.xib; sourceTree = "<group>"; };
+		ACEAB62320882A84009B8148 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		ACEAB629208B8B5A009B8148 /* Standings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Standings.swift; sourceTree = "<group>"; };
+		ACEAB62B208B8DFA009B8148 /* AllTeams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTeams.swift; sourceTree = "<group>"; };
+		ACEAB62D208B9714009B8148 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		ACEAB630208B986B009B8148 /* RestApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
+		ACEAB632208B997A009B8148 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		ACEAB638208C314D009B8148 /* StandingsBO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsBO.swift; sourceTree = "<group>"; };
+		ACEAB63A208C35D7009B8148 /* AllTeamsBO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTeamsBO.swift; sourceTree = "<group>"; };
+		ACEAB63D208C3975009B8148 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +77,72 @@
 			isa = PBXGroup;
 			children = (
 				ACEAB60D20882657009B8148 /* AppDelegate.swift */,
-				ACEAB60F20882657009B8148 /* ViewController.swift */,
-				ACEAB61120882657009B8148 /* Main.storyboard */,
-				ACEAB61420882657009B8148 /* Assets.xcassets */,
-				ACEAB61620882657009B8148 /* LaunchScreen.storyboard */,
 				ACEAB61920882657009B8148 /* Info.plist */,
+				ACEAB61620882657009B8148 /* LaunchScreen.storyboard */,
+				ACEAB62D208B9714009B8148 /* Extensions.swift */,
+				ACEAB61420882657009B8148 /* Assets.xcassets */,
+				ACEAB62F208B97DF009B8148 /* Mechanisms */,
+				ACEAB627208B8AE8009B8148 /* Presentation */,
+				ACEAB628208B8B2B009B8148 /* Models */,
+				ACEAB63C208C363F009B8148 /* BusinessObjects */,
 			);
 			path = "NBA Teams";
+			sourceTree = "<group>";
+		};
+		ACEAB625208B8A8B009B8148 /* FeedCells */ = {
+			isa = PBXGroup;
+			children = (
+				ACEAB62320882A84009B8148 /* FeedCell.swift */,
+				ACEAB61F20882A14009B8148 /* StandingsTableViewCell.swift */,
+				ACEAB62020882A14009B8148 /* StandingsTableViewCell.xib */,
+			);
+			path = FeedCells;
+			sourceTree = "<group>";
+		};
+		ACEAB626208B8ABC009B8148 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ACEAB61120882657009B8148 /* Main.storyboard */,
+				ACEAB60F20882657009B8148 /* MainFeedViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ACEAB627208B8AE8009B8148 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				ACEAB625208B8A8B009B8148 /* FeedCells */,
+				ACEAB626208B8ABC009B8148 /* ViewControllers */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		ACEAB628208B8B2B009B8148 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ACEAB629208B8B5A009B8148 /* Standings.swift */,
+				ACEAB62B208B8DFA009B8148 /* AllTeams.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ACEAB62F208B97DF009B8148 /* Mechanisms */ = {
+			isa = PBXGroup;
+			children = (
+				ACEAB630208B986B009B8148 /* RestApiManager.swift */,
+				ACEAB632208B997A009B8148 /* Routes.swift */,
+				ACEAB63D208C3975009B8148 /* CacheManager.swift */,
+			);
+			path = Mechanisms;
+			sourceTree = "<group>";
+		};
+		ACEAB63C208C363F009B8148 /* BusinessObjects */ = {
+			isa = PBXGroup;
+			children = (
+				ACEAB638208C314D009B8148 /* StandingsBO.swift */,
+				ACEAB63A208C35D7009B8148 /* AllTeamsBO.swift */,
+			);
+			path = BusinessObjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACEAB61820882657009B8148 /* LaunchScreen.storyboard in Resources */,
+				ACEAB62220882A14009B8148 /* StandingsTableViewCell.xib in Resources */,
 				ACEAB61520882657009B8148 /* Assets.xcassets in Resources */,
 				ACEAB61320882657009B8148 /* Main.storyboard in Resources */,
 			);
@@ -136,8 +218,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACEAB61020882657009B8148 /* ViewController.swift in Sources */,
+				ACEAB62C208B8DFA009B8148 /* AllTeams.swift in Sources */,
+				ACEAB61020882657009B8148 /* MainFeedViewController.swift in Sources */,
+				ACEAB63B208C35D7009B8148 /* AllTeamsBO.swift in Sources */,
+				ACEAB631208B986B009B8148 /* RestApiManager.swift in Sources */,
+				ACEAB63E208C3975009B8148 /* CacheManager.swift in Sources */,
+				ACEAB62420882A84009B8148 /* FeedCell.swift in Sources */,
+				ACEAB633208B997A009B8148 /* Routes.swift in Sources */,
+				ACEAB62120882A14009B8148 /* StandingsTableViewCell.swift in Sources */,
+				ACEAB639208C314D009B8148 /* StandingsBO.swift in Sources */,
+				ACEAB62A208B8B5A009B8148 /* Standings.swift in Sources */,
 				ACEAB60E20882657009B8148 /* AppDelegate.swift in Sources */,
+				ACEAB62E208B9714009B8148 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,11 +369,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G52JHG5LJN;
 				INFOPLIST_FILE = "NBA Teams/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "danilobecke.NBA-Teams";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -292,11 +385,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G52JHG5LJN;
 				INFOPLIST_FILE = "NBA Teams/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "danilobecke.NBA-Teams";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
