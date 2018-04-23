@@ -11,18 +11,19 @@ import UIKit
 class MainFeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     private enum CellType {
-        case standings(style: StandingsCell.Conference)
+        case standings(conference: StandingsCell.Conference)
         case segue(title: String)
     }
     
     @IBOutlet weak var tableView: UITableView?
     
-    private let cells: [CellType] = [.standings(style: .east),
-                                     .standings(style: .west),
+    private let cells: [CellType] = [.standings(conference: .east),
+                                     .standings(conference: .west),
                                      .segue(title: "All Teams")
                                     ]
     private var cellsHeightCache: [IndexPath: CGFloat] = [:]
     
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         

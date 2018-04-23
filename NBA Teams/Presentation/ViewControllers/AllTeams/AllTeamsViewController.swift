@@ -11,9 +11,7 @@ import UIKit
 class AllTeamsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, AllTeamsDelegate {
     
     // MARK: - AllTeamsDelegate
-    func didFail() {
-        
-    }
+    func didFail() {}
     
     func didSucceed(withTeams teams: AllTeams) {
         allTeams = teams.teams.config.flatMap { $0 }

@@ -15,20 +15,24 @@ class StandingsCell: UITableViewCell, FeedCell, StandingsDelegate, AllTeamsDeleg
         case west = "Western"
     }
     
+    var numberOfTeams: Int {
+        return 8
+    }
+    
     // MARK: - Standings & AllTeams Delegate
     func didFail() {}
     
     func didSucceed(withStandings standings: Standings) {
         switch conference {
         case .east:
-            self.standings = Array(standings.league.standard.conference.east.prefix(8)).sorted {
-                (first, second) -> Bool in
-                return first.confRank < second.confRank
+            self.standings = Array(standings.league.standard.conference.east.prefix(numberOfTeams))
+                .sorted { (first, second) -> Bool in
+                    return Int(first.confRank) ?? 0 < Int(second.confRank) ?? 0
             }
         case .west:
-            self.standings = Array(standings.league.standard.conference.west.prefix(8)).sorted {
-                (first, second) -> Bool in
-                return first.confRank < second.confRank
+            self.standings = Array(standings.league.standard.conference.west.prefix(numberOfTeams))
+                .sorted { (first, second) -> Bool in
+                    return Int(first.confRank) ?? 0 < Int(second.confRank) ?? 0
             }
         }
         AllTeamsBO(withDelegate: self).getTeams()
@@ -113,6 +117,8 @@ class StandingsCell: UITableViewCell, FeedCell, StandingsDelegate, AllTeamsDeleg
                     continue
                 }
             }
+            stack.isHidden = false
         }
+        
     }
 }
