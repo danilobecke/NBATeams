@@ -29,6 +29,10 @@ class AllTeamsCell: UITableViewCell, FeedCell {
     @IBOutlet weak var name: UILabel?
     @IBOutlet weak var appStore: UIImageView?
     @IBOutlet weak var homepage: UIImageView?
+    @IBOutlet weak var tShirtIcon: UIImageView?
+    @IBOutlet var expandedConstraints: [NSLayoutConstraint]?
+    @IBOutlet var compressedConstraints: [NSLayoutConstraint]?
+    @IBOutlet var tricode: UILabel?
     
     // MARK: - Reactive vars
     var team: Team? {
@@ -63,11 +67,26 @@ class AllTeamsCell: UITableViewCell, FeedCell {
     // MARK: - Internal work
     private func updateInterface() {
         self.name?.text = team?.name
-        self.name?.textColor = expanded ? UIColor.white : UIColor.black
-        self.name?.font = expanded ? UIFont.boldSystemFont(ofSize: 17) : UIFont.systemFont(ofSize: 17)
-        self.backgroundColor = expanded ? team?.primaryColor : UIColor.clear
+        self.tricode?.text = " - \(team?.tricode ?? "")"
+        
+        self.backgroundColor = expanded ? UIColor.white : UIColor.clear
+        
+        let font = expanded ? UIFont.boldSystemFont(ofSize: 20) : UIFont.systemFont(ofSize: 17)
+        self.name?.font = font
+        self.tricode?.font = font
+        
+        self.tricode?.isHidden = !expanded
         self.appStore?.isHidden = !expanded
         self.homepage?.isHidden = !expanded
+        self.tShirtIcon?.isHidden = !expanded
+        self.tShirtIcon?.tintColor = team?.primaryColor
+        
+        for constraint in expandedConstraints ?? [] {
+            constraint.priority = expanded ? .defaultHigh : .defaultLow
+        }
+        for constraint in compressedConstraints ?? [] {
+            constraint.priority = expanded ? .defaultLow : .defaultHigh
+        }
     }
     
     // MARK: - IBActions
