@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AllTeamsViewController" customModule="NBA_Teams" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="4iE-Df-AGZ" id="sqK-ET-M4V"/>
+                <outlet property="view" destination="iFm-Fl-Lbv" id="vK3-YO-ZDq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iFm-Fl-Lbv">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4iE-Df-AGZ">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="4iE-Df-AGZ" firstAttribute="leading" secondItem="Z3p-cP-Wfn" secondAttribute="leading" id="5Ie-gG-mq0"/>
+                <constraint firstItem="Z3p-cP-Wfn" firstAttribute="bottom" secondItem="4iE-Df-AGZ" secondAttribute="bottom" id="Dqw-Ed-NlK"/>
+                <constraint firstItem="4iE-Df-AGZ" firstAttribute="top" secondItem="Z3p-cP-Wfn" secondAttribute="top" id="ntE-Ct-81P"/>
+                <constraint firstItem="Z3p-cP-Wfn" firstAttribute="trailing" secondItem="4iE-Df-AGZ" secondAttribute="trailing" id="puu-jM-quj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Z3p-cP-Wfn"/>
+            <point key="canvasLocation" x="-90" y="-46"/>
+        </view>
+    </objects>
+</document>

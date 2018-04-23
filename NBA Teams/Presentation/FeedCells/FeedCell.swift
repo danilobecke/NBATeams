@@ -9,6 +9,6 @@
 import UIKit
 
 protocol FeedCell {
-    var height: Float { get }
+    var height: CGFloat { get }
     func didSelect(tableView: UITableView)
 }
